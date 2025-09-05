@@ -83,6 +83,7 @@ if uploaded_file:
 
     st.markdown(
     """
+    <title> 🛍️ Visual Product Matcher</title>
     <style>
     div[data-testid="stHorizontalBlock"] {
         justify-content: flex-start;
@@ -104,6 +105,7 @@ if uploaded_file:
                 if os.path.exists(img_path):
                     st.image(img_path, caption=f"{match['file']}\nScore={score:.3f}")
                     break
+
 
 
 
